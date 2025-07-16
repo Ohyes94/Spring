@@ -10,9 +10,13 @@ class DemoApplicationTests {
     @Value("${section}")
     private String section;
 	
+    @Value("${target}")
+    private String target;
+	
     @Test
     void testPropertyLoading() {
         System.out.println("App Section: " + section);
+        System.out.println("target: " + target);
     }
 
 }

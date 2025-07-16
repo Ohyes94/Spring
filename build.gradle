@@ -31,4 +31,5 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+    systemProperty "spring.profiles.active", System.getProperty("profiles")
 }
